@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Start Header */
+
+header {
+
+    background-color: #353637;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #32a0c2 4px solid;
+}
+
+header ul li {
+    float: right;
+    display: inline;
+    padding: 0 20px
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+#branding {
+    float: right
+}
+
+header #branding h1 {
+    margin: 0
+}
+
+header nav {
+    float: left;
+    margin-top: -5px
+}
+
+header .highlight,
+.current a {
+    color: #32a0c2;
+    font-weight: bold
+}
+
+header a:hover {
+    color: #ccc;
+    font-weight: bold
+}
+
+#branding .fa-user-circle {
+    margin-left: 10px
+}
+
+/* End Header */
+
+/* Start Section */
+
+#slider {
+    position: relative;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden
+}
+
+#wrapper {
+    width: 400%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out
+}
+
+#wrapper .content {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-repeat: no-repeat
+}
+
+#wrapper .content img {
+    width: 100%
+}
+
+#navlinks {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 0)
+}
+
+#navlinks ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 6px;
+    display: inline-block
+}
+
+#navlinks ul li {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#navlinks ul li:hover{background-color: #ff0}
+
+#navlinks ul li:active{background-color: #333}
+
+#navlinks ul li.active:hover{background-color: #484848}
+
+/* End Section */
+
+/* Start Responsive */
+
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+    }
+
+    header {
+        padding-bottom: 5px
+    }
+
+    header nav {
+        margin-top: 20px
+    }
+
+    header nav ul {
+        margin-left: 30px
+    }
+}
+
+/* End Responsive */
